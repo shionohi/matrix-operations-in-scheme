@@ -4,7 +4,7 @@
 ;;; Author : Hiroyuki Shiono
 ;;; Date : 10/28/2021
 ;;; Explanation : This code provides the basic matrix operations which is applicable to m x n dimensional array.
-;;; You can implement the m x n dimensional array using the structure of (list (list ... ) (list ... ) ...).
+;;; You can implement the m x n array using the structure of (list (list ... ) (list ... ) ...).
 ;;; as examples below suggested. 
 ;;; All lists in the list of matrix have must be same lengths and all elements in the matrix must be numbers.
 
@@ -45,7 +45,7 @@
 ;;; a list, which contains all elements in m[][n]
 ;;;
 ;;; example :
-;;; 2 x 2 dimensional matrix
+;;; 2 x 2 matrix
 ;;;     2 | 4                               
 ;;; m = - - - -> slice-by-vertical(m, 0) -> (list 2 1)
 ;;;     1 | 3                               
@@ -253,7 +253,7 @@
 ;;; output : a list of lists, initially given as an empty list
 ;;; 
 ;;; output :
-;;; a list of lists, x by y dimensional matrix where all values are zeroes.
+;;; a list of lists, x by y matrix where all values are zeroes.
 
 (define matrix.zeroes-helper
   (lambda (x y output)
@@ -266,7 +266,7 @@
 ;;; x : an integer
 ;;; y : an integer
 ;;; output :
-;;; a list of lists, x by y dimensional matrix where all values are zeroes.
+;;; a list of lists, x by y matrix where all values are zeroes.
 
 (define matrix.zeroes
   (lambda (x y)
